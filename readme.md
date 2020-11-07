@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -Micky Puck van Dartel-
+**Auteur:** Micky Puck van Dartel
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -67,13 +67,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
+Uitwerken voor de kick-off werkgroep (begin van de eerste week)
 
-**Je startniveau:** -Blauwe piste-
+**Je startniveau:** Blauwe piste
 
-**Je focus:** -extra aandacht voor de surface laag (surface plane)-
+**Je focus:** Extra aandacht voor de surface laag (surface plane)
 
-**Je opdracht:** -ontwerp uit de propedeuse. Informatiearchitectuur, Heel Holland Bakt.-
+**Je opdracht:** Ontwerp uit de propedeuse. Informatiearchitectuur, Heel Holland Bakt.
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
