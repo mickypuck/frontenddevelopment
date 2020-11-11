@@ -77,8 +77,8 @@ Uitwerken voor de kick-off werkgroep (begin van de eerste week)
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/info-recept_HHB.png" width="375px" alt="informatie over recept">
+<img src="images/pathe_homepage.png" width="375px" alt="homepage van Pathe">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/profiel_HHB.png" width="375px" alt="profiel op HHB">
+<img src="images/pathe_film.png" width="375px" alt="filmoverzicht op Pathe">
