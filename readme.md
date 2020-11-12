@@ -62,18 +62,26 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
--uitwerken voor de 1e werkgroep - eind van de eerste week-
+**Screenshot(s) van de eerste pagina breakdownschets:**
 
+<img src="images/breakdownschets_homepage.png" width="375px" alt="homepage van Pathe breakdownschets">
+
+**Screenshot(s) van de eerste pagina breakdownschets detailblok:**
+
+<img src="images/breakdownschets_homepage_blokdetail.png" width="375px" alt="filmoverzicht op Pathe breakdownschets detailblok">
+
+**Screenshot(s) van de tweede pagina breakdownschets:**
+
+<img src="images/breakdownschets_filmpagina.png" width="375px" alt="homepage van Pathe">
 
 
 ## Intake (week 1)
-Uitwerken voor de kick-off werkgroep (begin van de eerste week)
 
 **Je startniveau:** Blauwe piste
 
 **Je focus:** Extra aandacht voor de surface laag (surface plane)
 
-**Je opdracht:** Ontwerp uit de propedeuse. Informatiearchitectuur, Heel Holland Bakt.
+**Je opdracht:** Ik heb gekozen voor de Pathe website
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
