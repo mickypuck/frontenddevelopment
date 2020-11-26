@@ -50,13 +50,11 @@ Wat ik ook nog wil zeggen is dat het huiswerk wel erg veel is (in het algemeen).
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Denzel | Gerrit | Jessie | Micky | Cesar |
+| --- | --- | --- | --- | --- |
+|Selectoren |De dingen die ik wil uitwerken|Background-image|Breakdown schetsen|Desktop V1 ipv Telefoon V1|
+|Navigatie |De uitbreiding naar responsive|Transitions tussen fixed en relative header op scrol|Flexbox|Alle content?|
+|Orginele website aanpassen|Hoe neem ik huisstijl over|svg image|Lettertypes|Image size, Voorbeeld vorig jaar|
 
 ### Verslag van meeting
 
