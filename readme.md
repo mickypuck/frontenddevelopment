@@ -38,7 +38,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Ik vond de eerste 2 opdrachten, positioneren en typografie, erg leuk om te doen. De opdrachten waren soms best uitdagend maar zeker te doen. De hulp die erbij werd gegeven was zeker hulpzaam.
+
+Echter flexbox en javascript waren voor mij echt niet te doen. Ik vond het echt super lastig en de hulp erbij hielp ook niet.
+
+Wat ik ook nog wil zeggen is dat het huiswerk wel erg veel is (in het algemeen). Ik ben hierdoor in de ochtend van de deadline voor front-end nog niet begonnen met de 2 pagina's die vandaag voor 18:00 af moeten zijn. Dit komt ook doordat er 3 deadlines deze week waren, waarvan 2 voor een cijfer. En vandaag hebben we 3 uur les, dus ik kan vandaag ook niet veel doen voor front-end. Ik ben hierdoor erg gefrustreerd.
 
 **Screenshot(s):**
 
