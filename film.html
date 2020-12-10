@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="jouw naam">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Howdy</title>
+
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li>
+                <img class="logo" src="./images/logo-01.png" />
+            </li>
+            <li>
+                <img src="./images/movie-black.svg" />
+                Films
+            </li>
+            <li>
+                    <img src="./images/time-black.svg" />
+                Tijden
+            </li>
+            <li>
+                    <img src="./images/location-black.svg" />
+                Bioscopen
+            </li>
+            <li>
+                    <img src="./images/menu-black.svg" />
+                Menu
+            </li>
+        </ul>
+    </div>
+    <div class="film-trailer">
+        <div class="film-summary">
+            <img src="./images/bonBini.jpg" class="cover-small"/>
+            <div>
+                <span class="title">
+                    <h3>
+                        Bon Bini: Judeska in da House
+                    </h3>
+                    <img src="./images/icon-heart-outline-white-sm.png" />
+                </span>
+                <button class="w-100">Tijden en tickets</button>
+            </div>
+        </div>
+        <div class="background">
+
+        </div>
+    </div>
+    <div class="film-details">
+        <img src="./images/rating.png" /><br />
+            81 minuten
+        <div class="kijkwijzer">
+            <img src="./images/kijkwijzer-9-gray-32.png"/>
+            <img src="./images/kijkwijzer-fear-gray-32.png"/>
+            <img src="./images/kijkwijzer-explicitlanguage-gray-32.png"/>
+        </div>
+        <span class="tag">Comedy</span>
+        <span class="tag">Nederlands</span>
+        <p>
+
+
+            Release: 10-12-2020<br /><br />
+
+            Tante Judeska levert net haar nichtje Gabriëlla af op het landgoed van haar nieuwe vriend Lucas, als zijn vader - een prominente politicus en de Minister van Binnenlandse Zaken - een landelijke lockdown afkondigt.
+        </p>
+        <button class="gray w-100">Lees meer</button>
+    </div>
+    <div class="tijden-tickets">
+        <div class="cta">
+            <img src="./images/logo-all-stars-02-white.png"/><p>
+                Koop nu je tickets voor Bon Bini: Judeska in da House <strong>en ontvang Stars!</strong>
+                </p>
+            </div>
+        <h2>tijden en tickets</h2>
+    <button class="w-100">kies een bioscoop</button>
+    </div>
+    <div class="trailer-fotos">
+
+        <h2>Trailers en foto's</h2>
+        <p>
+            1 video
+            </p>
+        <div class="flex-row">
+            <img class="video" src="./images/Schermafbeelding 2020-11-23 om 11.27.50.png" />
+        </div>
+        <p>
+            3 stills
+            </p>
+        <div class="flex-row">
+
+            <img src="./images/BBH-POSTER_Final.jpg" />
+            <img src="./images/judeskatrailerstil-header.png" />
+            <img src="./images/33759_133094_st_sd-high.jpg" />
+
+        </div>
+        <h2>Cast en crew</h2>
+        <div class="flex-row">
+            <div>
+                <img src="./images/placeholder-03.png" />
+                <p>
+                    Jonathan Herman
+                </p>
+            </div>
+            <div>
+                <img src="./images/jandinoasporaat_emoji_120x160.jpg" />
+                <p>
+                    Jandino Asporaat
+                </p>
+            </div>
+            <div>
+                <img src="./images/cynthiaabmba_afbeelding.png" />
+                <p>
+                    Cynthia Abma
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="recensie">
+        <button class="w-100">schrijf een recensie</button>
+    </div>
+
+    <footer>
+        <div class="zwarte-balk">
+
+        </div>
+        <div class="gele-balk">
+            <ul>
+                <li>
+                    <img src="./images/twitter.png" />
+                </li>
+                <li>
+                    <img src="./images/facebook.png" />
+                </li>
+                <li>
+                    <img src="./images/instagram.png" />
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function bestelToggle() {
+
+            toggleElements = Array.from(document.getElementsByClassName("button"));
+            toggleElements.forEach(element => element.classList.toggle("inactive"));
+            document.getElementsByClassName("toggle-background")[0].classList.toggle("active");
+        }
+
+    </script>
+</body>
+
+</html>

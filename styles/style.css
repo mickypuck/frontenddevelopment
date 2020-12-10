@@ -1,5 +1,396 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+@font-face {
+    font-family: "trade";
+    src: url("../fonts/trade-gothic-bold-condensed-no-20-2.woff2");
 }
 
+.w-100{
+    width:100%;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,button{
+    text-transform: uppercase;
+    font-family: "trade";
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.header {
+    max-height: 30px;
+    background-color: #ffc426;
+    color: #4c3c0c;
+    padding: 10px;
+}
+
+.header li{
+    text-align: center;
+}
+.header img{
+    max-height: 20px;
+}
+
+.header ul,.header img.logo{
+    max-height: 30px;
+}
+
+
+.header ul, .film-covers ul, footer ul{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+.film-covers{
+    overflow: hidden;
+    height: 80vh;
+    position: relative;
+}
+
+.cover-carrusel{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+
+}
+
+.film{
+    margin-left: 50px;
+}
+.film:first-child{
+    margin-left: 0px;
+}
+
+.cover-small{
+    width: 170px;
+    height: 240px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4)
+}
+
+.film p{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 170px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    text-align: center;
+
+}
+
+.film-trailer{
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.film-covers ul{
+    margin-top: 18px;
+    color: #ffc426;
+    filter: blur(0);
+    text-transform: uppercase;
+    font-family: "trade";
+    font-size: 28px;
+    justify-content: space-evenly
+}
+
+.background{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -1;
+    height: 53vh;
+    filter: blur(20px);
+    background: url(../images/witches.jpg);
+
+    transform: scale(1.8) translateY(80px);
+}
+
+.film-trailer .background{
+    filter: blur(0px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1)), url(../images/33759_133098_st_sd-high.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.film-summary{
+    flex-grow: 1;
+    color: white;
+    margin: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.film-summary div{
+    flex-grow: 1;
+}
+
+.film-summary img{
+    margin-right: 15px;
+}
+
+.film-details, .trailer-fotos{
+    font-size: 16px;
+    color: #d8d8d8;
+    background-color: black;
+    padding: 15px;
+}
+
+.film-details p{
+    line-height: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.kijkwijzer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.kijkwijzer img{
+    margin-right: 5px;
+}
+
+.tag{
+        padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    margin-top: 50px;
+    color: #151515;
+
+    border-radius: 1000px;
+    background-color: #a7a9ac;
+}
+
+/* Bestel nu je tickets Button*/
+
+.toggleParent {
+    display: flex;
+    width: 292px;
+    height: 72px;
+    border-radius: 72px;
+    border:solid white 2px;
+    background-color: #2D2D2E;
+}
+
+.toggleParent .button {
+    height: 64px;
+    width:142px;
+    margin: 4px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "trade";
+    font-size: 11px;
+    color: black;
+    justify-content: center;
+    transition:all 0.6s;
+}
+
+.toggleParent .button.inactive {
+    color: #fff;
+    filter: brightness(0.6);
+}
+.toggleParent .button.inactive:hover {
+    color: #fff;
+    filter: brightness(1);
+}
+
+.toggleParent img{
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toggle-background{
+    z-index: 0;
+    transition: left 0.6s;
+    position: absolute;
+    height: 64px;
+    width: 142px;
+    margin: 4px;
+    left:17px;
+    border-radius: 64px;
+    background-image: linear-gradient(to bottom, #F7DA66, #ffc426);
+}
+
+.toggle-background.active{
+    left: 158px;
+}
+
+
+.grad{
+    padding:15px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, #171717 0%,  #353535 50%, #171717 100%);
+
+    color:white;
+}
+
+.imax,.vierDX{
+}
+.imax img,.vierDX img{
+    margin-bottom: 180px
+}
+
+button, .location-button {
+    padding: 10px;
+    border: none;
+    color: rgba(21,21,21,.96);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.12);
+    border-radius: 6px;
+    background-color: #ffc426;
+    background-image: linear-gradient(to bottom,#f7da66,#ffc426);
+}
+
+button {
+    font-size: 16px;
+    padding:8px 25px 8px 25px;
+}
+
+
+button.gray{
+    filter: grayscale(100%);
+}
+
+
+.location-input{
+    display: flex;
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.location-input input{
+    border: none;
+    padding:5px;
+    height: 32px;
+    margin: auto;
+    margin-left: 0px;
+    flex-grow: 1;
+}
+
+.location-input .location-button{
+    margin: 5px;
+    height: 16px;
+    width:16px;
+}
+
+.unlimited img{
+    width: 166px;
+}
+
+.vierDX{
+    padding:20px;
+    color: white;
+    background: url(../images/banner-4d-sm.png) no-repeat center;
+    background-size: cover;
+}
+.imax{
+    padding: 20px;
+    color:white;
+    background: url(../images/banner_IMAX-sm.jpg) no-repeat center;
+    background-size: cover;
+}
+.tijden-tickets {
+    padding-bottom: 40px;
+    margin:15px;
+}
+.tijden-tickets .cta {
+    background: url(../images/bg-allstars-box-sm.png) no-repeat center;
+    background-size: cover;
+}
+
+.cta{
+    border-radius: 5px;
+    align-items: center;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 60px;
+}
+.cta p{
+    margin-left: 15px;
+}
+
+.trailer-fotos .flex-row{
+    overflow-x: hidden;
+}
+
+.trailer-fotos .flex-row p{
+text-align: center;
+}
+
+.trailer-fotos img{
+    height: 160px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.trailer-fotos img.video{
+    height: 220px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+
+.recensie{
+    margin: 15px;
+}
+.recensie button{
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+footer .gele-balk{
+    padding: 40px;
+    color: black;
+    background-color: #ffc426;
+}
+
+footer .gele-balk li{
+    height: 32px;
+    width: 32px;
+}
+
+footer .gele-balk ul{
+    width: 132px;
+    margin: auto;
+}

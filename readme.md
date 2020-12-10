@@ -6,9 +6,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://www.pathe.nl/film/25509/bon-bini-judeska-in-da-house?position=1
+2. https://www.pathe.nl/film/24523/monster-hunter?position=3
+3. https://www.pathe.nl/
 
 
 
@@ -30,9 +30,27 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
 
+Ik heb helaas geen huiswerk kunnen maken door andere deadlines. Ik heb er wel naar kunnen kijken en de lessen waren voor de rest heel nuttig. Ik ben deze week voor het gesprek echt hard aan het werk geweest om in ieder geval de 2 pagina's bijna af te hebben zodat ik daarna alle foefjes die we hebben geleerd kan toepassen en eventueel onderdelen van de website te verbeteren.
 
+**Screenshot(s):**
+
+<img src="images/pathe_homepage_v2.png" width="375px" alt="versie 2 van Pathe homepage">
+
+<img src="images/pathe_film_v2.png" width="375px" alt="versie 2 van Pathe filmoverzicht">
+
+Vanaf hier ging het mij nog vrij goed af. Ik vind flexbox wel nog steeds best moeilijk. Ik moet nog wat dingen toevoegen en aanpassen en kan daarna verder om alle dingen die we hebben geleerd toe te passen aan de 2 pagina's tot hoe ver dit kan.
+
+### Agenda voor meeting
+
+| Denzel | Gerrit | Jessie | Micky | Cesar |
+| --- | --- | --- | --- | --- |
+| / | / | / |Bronnenlijst| / |
+| / | / | / |Comments in einddocument| / |
+| / | / | / |Chrome extensie| / |
+
+### Verslag van meeting
 
 ## Voortgang 1 (week 3)
 
@@ -46,7 +64,7 @@ Wat ik ook nog wil zeggen is dat het huiswerk wel erg veel is (in het algemeen).
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+Ik heb nog niks.
 
 ### Agenda voor meeting
 
@@ -58,7 +76,17 @@ Wat ik ook nog wil zeggen is dat het huiswerk wel erg veel is (in het algemeen).
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Uitklapmenu (hamburgermenu) wel namaken van Pathe
+
+Chrome extensie - CSS peeper gebruiken!
+
+Pseudo element gebruiken voor “NU” “KIDS” etc  https://codepen.io/joostf/pen/QGLWqx
+
+Slider van Pathe hoeft 'nog' niet. Maar wel de 3 andere films ernaast plaatsen.
+
+Wel breakpoints in de website.
+
+Website accessible maken voor iedereen. (Met tab overal door heen kunnen)
 
 
 

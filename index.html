@@ -1,19 +1,197 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Howdy</title>
-	
+
 	<link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<h1>Howdy</h1>
-	<script src="scripts/script.js"></script>
+	<div class="header">
+        <ul>
+            <li>
+                <img class="logo" src="./images/logo-01.png" />
+            </li>
+            <li>
+                <img src="./images/movie-black.svg" />
+                Films
+            </li>
+            <li>
+                    <img src="./images/time-black.svg" />
+                Tijden
+            </li>
+            <li>
+                    <img src="./images/location-black.svg" />
+                Bioscopen
+            </li>
+            <li>
+                    <img src="./images/menu-black.svg" />
+                Menu
+            </li>
+        </ul>
+    </div>
+	<div class="film-covers">
+		<ul>
+			<li>
+				NU
+			</li>
+			<li>
+				binnenkort
+			</li>
+			<li>
+				specials
+			</li>
+			<li>
+				kids
+			</li>
+		</ul>
+		<div class="cover-carrusel">
+			<div class="film">
+				<img src="./images/bonBini.jpg" class="cover-small"/>
+				<p>
+					Bon bini: waka flacka flame
+				</p>
+			</div>
+			<div class="film">
+				<a href="./film.html">
+				<img src="./images/bonBini.jpg" class="cover-small"/>
+				</a>
+				<p>
+					Bon bini: waka flacka flame
+				</p>
+			</div>
+			<div class="film">
+				<a href="./film.html">
+				<img src="./images/bonBini.jpg" class="cover-small"/>
+				</a>
+				<p>
+					Bon bini: waka flacka flame
+				</p>
+			</div>
+			<div class="film">
+				<a href="./film.html">
+				<img src="./images/bonBini.jpg" class="cover-small"/>
+				</a>
+				<p>
+					Bon bini: waka flacka flame
+				</p>
+			</div>
+			<div class="film">
+				<a href="./film.html">
+				<img src="./images/bonBini.jpg" class="cover-small"/>
+				</a>
+				<p>
+					Bon bini: waka flacka flame
+				</p>
+			</div>
+
+		</div>
+		<div class="background">
+
+		</div>
+	</div>
+	<div class="grad bestel-tickets">
+		<h3>bestel nu je tickets</h3>
+		<div class="toggleParent" onclick="bestelToggle()">
+			<div class="toggle-background">
+
+			</div>
+			<div class="button">
+				<img src="./images/icon-crosshair.svg" />
+				bioscopen in de buurt
+			</div>
+			<div  class="button inactive">
+				<img src="./images/icon-heart-closed-white.svg" />
+				mijn favoriete bioscopen
+			</div>
+		</div>
+		<h3>wat is jouw locatie?</h3>
+		<div class="location-input">
+			<input type="text" placeholder="Postcode of plaats"><div class="location-button">
+				<img src="./images/location-black.svg" />
+			</div>
+		</div>
+	</div>
+	<div class="grad nieuws">
+		<h3>nieuws</h3>
+		<div class="cards">
+			<div>
+				1
+			</div>
+			<div>
+				2
+			</div>
+			<div>
+				3
+			</div>
+		</div>
+	</div>
+	<div class="grad unlimited">
+		<img src="./images/logo-unlimited.svg" />
+		<h3>filmliefhebbers opgelet!</h3>
+		<p>
+			Van film genieten is nog nooit zo voordelig geweest. Met Pathé Unlimited kun je onbeperkt, op alle dagen van de week, naar de film in alle Pathé bioscopen in Nederland. Je kunt dus net zo vaak gaan als je maar wilt!
+		</p>
+		<button>meld je nu aan</button>
+	</div>
+	<div class="imax">
+		<img src="./images/imax-logo_RW.png" />
+		<h2>De meeslepende filmbeleving</h2>
+		<p>
+			Zie je een explosie of lijkt het alsof je de hitte kunt voelen? Zie je je helden op het witte doek of voelthet alsof je er zelf bij bent? IMAX maakt het verschil tussen een film zien en een film ervaren.
+		</p>
+		<button>ontdek imax</button>
+	</div>
+	<div class="grad allstars">
+		<img src="./images/logo-all-stars-white_RW.png" />
+		<h3>sparen voor extra's</h3>
+		<p>
+
+			Als je regelmatig naar Pathé gaat, dan verdien je toch iets extra’s? Dat vinden wij ook! Daarom is er nu Pathé All Stars, het nieuwe beloningsprogramma van Pathé waarmee je heel gemakkelijk spaart voor mooie kortingen, gratis producten en leuke extra’s bij elk bioscoopbezoek.
+		</p>
+		<button>maak nu een account aan</button>
+	</div>
+	<div class="vierDX">
+		<img src="./images/kleinformatbannerformaat_4DX_NieuwLogo_Witkopie.png" />
+		<h2>De vierdimentionale bioscoopervaring</h2>
+		<p>
+			Films zijn niet langer beperkt tot het scherm. 4DX trekt je de film in alsof je er zelf deel van uitmaakt. Met 20 verschillende soorten effecten creëert 4DX een compleet andere filmervaring.
+		</p>
+		<button>ontdek 4dx</button>
+	</div>
+
+	<footer>
+		<div class="zwarte-balk">
+
+		</div>
+		<div class="gele-balk">
+			<ul>
+				<li>
+					twit
+				</li>
+				<li>
+					face
+				</li>
+				<li>
+					insta
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script>
+	function bestelToggle() {
+
+		toggleElements = Array.from(document.getElementsByClassName("button"));
+		toggleElements.forEach(element => element.classList.toggle("inactive"));
+		document.getElementsByClassName("toggle-background")[0].classList.toggle("active");
+	}
+
+	</script>
 </body>
-	
+
 </html>
