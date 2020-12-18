@@ -6,13 +6,13 @@
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Howdy</title>
+	<title>Path&eacute;</title>
 
 	<link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<div class="header">
+	<nav class="header">
         <ul>
             <li>
                 <img class="logo" src="./images/logo-01.png" />
@@ -34,7 +34,7 @@
                 Menu
             </li>
         </ul>
-    </div>
+    </nav>
 	<div class="film-covers">
 		<ul>
 			<li>
@@ -50,120 +50,123 @@
 				kids
 			</li>
 		</ul>
-		<div class="cover-carrusel">
-			<div class="film">
+		<section class="cover-carousel">
+			<article class="film">
 				<img src="./images/bonBini.jpg" class="cover-small"/>
-				<p>
+				<h2>
 					Bon bini: waka flacka flame
-				</p>
-			</div>
-			<div class="film">
+				</h2>
+			</article>
+			<article class="film">
 				<a href="./film.html">
 				<img src="./images/bonBini.jpg" class="cover-small"/>
 				</a>
-				<p>
+				<h2>
 					Bon bini: waka flacka flame
-				</p>
-			</div>
-			<div class="film">
+				</h2>
+			</article>
+			<article class="film">
 				<a href="./film.html">
 				<img src="./images/bonBini.jpg" class="cover-small"/>
 				</a>
-				<p>
+				<h2>
 					Bon bini: waka flacka flame
-				</p>
-			</div>
-			<div class="film">
+				</h2>
+			</article>
+			<article class="film">
 				<a href="./film.html">
 				<img src="./images/bonBini.jpg" class="cover-small"/>
 				</a>
-				<p>
+				<h2>
 					Bon bini: waka flacka flame
-				</p>
-			</div>
-			<div class="film">
+				</h2>
+			</article>
+			<article class="film">
 				<a href="./film.html">
 				<img src="./images/bonBini.jpg" class="cover-small"/>
 				</a>
-				<p>
+				<h2>
 					Bon bini: waka flacka flame
-				</p>
-			</div>
+				</h2>
+			</article>
 
-		</div>
+		</section>
 		<div class="background">
 
 		</div>
 	</div>
-	<div class="grad bestel-tickets">
-		<h3>bestel nu je tickets</h3>
-		<div class="toggleParent" onclick="bestelToggle()">
-			<div class="toggle-background">
+	<section class="grad bestel-tickets">
+		<section>
+			<h3>bestel nu je tickets</h3>
+			<div class="toggleParent" onclick="bestelToggle()">
+				<div class="toggle-background">
 
+				</div>
+				<div class="button">
+					<img src="./images/icon-crosshair.svg" />
+					bioscopen in de buurt
+				</div>
+				<div  class="button inactive">
+					<img src="./images/icon-heart-closed-white.svg" />
+					mijn favoriete bioscopen
+				</div>
 			</div>
-			<div class="button">
-				<img src="./images/icon-crosshair.svg" />
-				bioscopen in de buurt
-			</div>
-			<div  class="button inactive">
-				<img src="./images/icon-heart-closed-white.svg" />
-				mijn favoriete bioscopen
-			</div>
-		</div>
+		</section>
+		<section>
 		<h3>wat is jouw locatie?</h3>
-		<div class="location-input">
-			<input type="text" placeholder="Postcode of plaats"><div class="location-button">
-				<img src="./images/location-black.svg" />
-			</div>
-		</div>
-	</div>
-	<div class="grad nieuws">
+		<form class="location-input">
+			<input type="text" placeholder="Postcode of plaats">
+			<input class="location-button" type="image" src="./images/location-black.svg" />
+		</form>
+		</section>
+	</section>
+	<section class="grad nieuws">
 		<h3>nieuws</h3>
 		<div class="cards">
-			<div>
+			<article>
 				1
-			</div>
-			<div>
+			</article>
+			<article>
 				2
-			</div>
-			<div>
+			</article>
+			<article>
 				3
-			</div>
+			</article>
 		</div>
-	</div>
-	<div class="grad unlimited">
+	</section>
+	<article class="grad unlimited">
 		<img src="./images/logo-unlimited.svg" />
-		<h3>filmliefhebbers opgelet!</h3>
+		<h2>filmliefhebbers opgelet!</h2>
 		<p>
 			Van film genieten is nog nooit zo voordelig geweest. Met Pathé Unlimited kun je onbeperkt, op alle dagen van de week, naar de film in alle Pathé bioscopen in Nederland. Je kunt dus net zo vaak gaan als je maar wilt!
 		</p>
 		<button>meld je nu aan</button>
-	</div>
-	<div class="imax">
+	</article>
+	<article class="imax">
 		<img src="./images/imax-logo_RW.png" />
 		<h2>De meeslepende filmbeleving</h2>
 		<p>
 			Zie je een explosie of lijkt het alsof je de hitte kunt voelen? Zie je je helden op het witte doek of voelthet alsof je er zelf bij bent? IMAX maakt het verschil tussen een film zien en een film ervaren.
 		</p>
 		<button>ontdek imax</button>
-	</div>
-	<div class="grad allstars">
+	</article>
+	<article class="grad allstars">
 		<img src="./images/logo-all-stars-white_RW.png" />
-		<h3>sparen voor extra's</h3>
+		<h2>sparen voor extra's</h2>
 		<p>
 
 			Als je regelmatig naar Pathé gaat, dan verdien je toch iets extra’s? Dat vinden wij ook! Daarom is er nu Pathé All Stars, het nieuwe beloningsprogramma van Pathé waarmee je heel gemakkelijk spaart voor mooie kortingen, gratis producten en leuke extra’s bij elk bioscoopbezoek.
 		</p>
 		<button>maak nu een account aan</button>
-	</div>
-	<div class="vierDX">
+	</article>
+	<article class="vierDX">
 		<img src="./images/kleinformatbannerformaat_4DX_NieuwLogo_Witkopie.png" />
 		<h2>De vierdimentionale bioscoopervaring</h2>
 		<p>
 			Films zijn niet langer beperkt tot het scherm. 4DX trekt je de film in alsof je er zelf deel van uitmaakt. Met 20 verschillende soorten effecten creëert 4DX een compleet andere filmervaring.
 		</p>
 		<button>ontdek 4dx</button>
-	</div>
+	</article>
 
 	<footer>
 		<div class="zwarte-balk">

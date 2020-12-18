@@ -24,8 +24,28 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
 
+Ik heb door persoonlijke omstandigheden alleen de feedback van Sam kunnen toepassen op de homepagina.
+
+**Screenshot(s):**
+
+<img src="images/pathe_homepage_v2.png" width="375px" alt="versie 2 van Pathe homepage">
+
+<img src="images/pathe_film_v2.png" width="375px" alt="versie 2 van Pathe filmoverzicht">
+
+(Dezelfde screenshots als vorige week, omdat ik alleen de semantiek heb veranderd)
+
+### Agenda voor meeting
+
+| Denzel | Gerrit | Jessie | Micky | Cesar |
+| --- | --- | --- | --- | --- |
+| Nogmaals slimme selectoren | Tables | Meerdere nav’s in html |Bronnenlijst| Werkend winkelmandje? |
+| Css tweede pagina (los?) | Lists | Meerdere full screen img onder elkaar |Comments in einddocument| Responsive tot welke resolutie? |
+| Fonts | Svg | Hamburger menu |Chrome extensie| Werkende carrousels |
+| Svg | / | / | Button op pagina | / |
+
+### Verslag van meeting
 
 
 ## Voortgang 2 (week 5)
@@ -44,13 +64,24 @@ Vanaf hier ging het mij nog vrij goed af. Ik vind flexbox wel nog steeds best mo
 
 ### Agenda voor meeting
 
-| Denzel | Gerrit | Jessie | Micky | Cesar |
-| --- | --- | --- | --- | --- |
-| / | / | / |Bronnenlijst| / |
-| / | / | / |Comments in einddocument| / |
-| / | / | / |Chrome extensie| / |
+(We hadden geen meeting)
 
 ### Verslag van meeting
+
+"Grootste opmerking die ik allereerst heb, probeer niet alles in een div te wrappen. Div heeft verder geen semantische waarde en moet je echt alleen gebruiken wanneer je een container nodig hebt om iets vorm te geven.
+Zo kan de cover-carrousel prima een section zijn en kunnen alle div's daarbinnen vervangen worden door articles. Kijk hier voor de rest van je site ook nog even goed naar!
+
+De div om je locatie input veld zou bijvoorbeeld weer een form moeten zijn en de location-button een button.
+
+Omdat je in jouw geval classes hebt gebruikt, is het niet enorm veel werk om al deze elementen te veranderen, maar het zou helemaal mooi zijn als je na het verwijderen van de div'jes ook nog eens de classes er uit zou krijgen.
+
+Denk er daarna ook aan dat iedere section en article een eigen heading moeten hebben, dus de filmtitel zou in dat geval de heading kunnen zijn van het article.
+
+Qua vormgeving ziet het er verder al erg goed uit.
+
+Als je er even een half uurtje op gaat zitten om de semantiek goed te krijgen ben je erg goed op weg!"
+
+- Sam Slotemaker
 
 ## Voortgang 1 (week 3)
 

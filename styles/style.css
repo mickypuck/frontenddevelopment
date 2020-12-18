@@ -58,7 +58,7 @@ h3 {
     position: relative;
 }
 
-.cover-carrusel{
+.cover-carousel{
     height: 100%;
     display: flex;
     justify-content: center;
@@ -80,13 +80,15 @@ h3 {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4)
 }
 
-.film p{
+.film h2{
+    font-weight: normal;
+    text-transform:none;
+    font-family: Arial,Helvetica,sans-serif;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.7);
     max-width: 170px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     text-align: center;
-
 }
 
 .film-trailer{
@@ -264,6 +266,7 @@ h3 {
 }
 
 button, .location-button {
+    display: block;
     padding: 10px;
     border: none;
     color: rgba(21,21,21,.96);
@@ -293,7 +296,7 @@ button.gray{
     flex-wrap: nowrap;
 }
 
-.location-input input{
+.location-input input[type=text]{
     border: none;
     padding:5px;
     height: 32px;
