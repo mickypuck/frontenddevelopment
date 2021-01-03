@@ -1,47 +1,144 @@
+/* Algemene classes en styles*/
+
+*:focus-visible{
+    border: #ffc426 solid 0.125em;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
 @font-face {
     font-family: "trade";
     src: url("../fonts/trade-gothic-bold-condensed-no-20-2.woff2");
+}
+
+.hidden {
+    display: none !important;
+}
+
+.bg-black {
+    background-color: black
 }
 
 .w-100{
     width:100%;
 }
 
+.grad{
+    padding:0.94em;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, #171717 0%,  #353535 50%, #171717 100%);
+
+    color:white;
+}
+
+.flex-row {
+    display: flex;
+}
+
 body {
     margin:0;
     padding: 0;
-    font-size: 13px;
+    font-size: 0.81em;
     font-family: Arial,Helvetica,sans-serif;
     line-height: 1.5;
 }
 
 h1,h2,h3,h4,button{
     text-transform: uppercase;
-    font-family: "trade";
+    font-family: "trade",Arial,Helvetica,sans-serif;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
+button {
+    flex-grow: 0;
+    font-size: 1em;
+    padding:0.5em 1.625em 0.5em 1.625em;
+}
+
+button:hover{
+    filter: brightness(0.8);
+}
+
+
+button.gray{
+    filter: grayscale(100%);
+}
+
+
+
+
+/* splide/slider */
+
+.splide__arrows{
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    pointer-events: none;
+}
+
+button.splide__arrow:first-of-type{
+    transform: rotate(180deg);
+}
+button.splide__arrow{
+    pointer-events:all;
+    padding: 0.5em 0px 0.5em 0px;
+    background-image: none;
+    background-color: rgba(0,0,0,0.2);
+    fill: #ffc426;
+    border-radius: 2em 0px 0px 2em;
+    line-height: 0.5em;
+    box-shadow: none;
+}
+
+button.splide__arrow svg{
+    height: 1.5em;
+}
+
+
+
+.cards {
+    width: 100%;
+}
+
+.cards article{
+    display: inline-block;
+    border-radius: 0.2em;
+    background-color: white;
+    color: black;
+    font-family: Arial,Helvetica,sans-serif;
+    overflow: hidden;
+    margin-right: 1em;
+
+}
+
+/*Header/nav */
+
 .header {
-    max-height: 30px;
+    max-height: 2.8em;
     background-color: #ffc426;
     color: #4c3c0c;
-    padding: 10px;
+    padding: 0.625em;
 }
 
 .header li{
     text-align: center;
 }
 .header img{
-    max-height: 20px;
+    max-height: 1.25em;
 }
 
 .header ul,.header img.logo{
-    max-height: 30px;
+    max-height: 2.8em;
 }
 
+/* Film covers  / film trailer*/
 
 .header ul, .film-covers ul, footer ul{
     margin: 0;
@@ -49,8 +146,33 @@ h3 {
     display:flex;
     justify-content: space-between;
     list-style-type: none;
+
 }
 
+.film-covers > ul:first-of-type li {
+    transition: all 0.4s;
+    border-top: 0.1em solid;
+    border-bottom: 0.1em solid;
+    border-color: rgba(0,0,0,0);
+
+}
+
+.film-covers > ul:first-of-type li:first-of-type {
+    color: white;
+    border-top: 0.1em solid;
+    border-bottom: 0.1em solid;
+}
+
+
+.film-covers > ul:first-of-type li:hover {
+    color: white;
+    border-top: 0.1em solid;
+    border-bottom: 0.1em solid;
+}
+
+#splide-movies {
+    width: 100%;
+}
 
 .film-covers{
     overflow: hidden;
@@ -63,12 +185,10 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: scroll;
-
 }
 
 .film{
-    margin-left: 50px;
+    margin-left: 3.125em;
 }
 .film:first-child{
     margin-left: 0px;
@@ -77,16 +197,16 @@ h3 {
 .cover-small{
     width: 170px;
     height: 240px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4)
+    box-shadow: 0px 0px 0.625em 0px rgba(0, 0, 0, 0.4)
 }
 
 .film h2{
     font-weight: normal;
     text-transform:none;
     font-family: Arial,Helvetica,sans-serif;
-    font-size: 16px;
+    font-size: 1em ;
     color: rgba(255, 255, 255, 0.7);
-    max-width: 170px;
+    max-width: 10.63em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     text-align: center;
 }
@@ -98,16 +218,17 @@ h3 {
 }
 
 .film-covers ul{
-    margin-top: 18px;
+    margin-top: 1.125em;
     color: #ffc426;
     filter: blur(0);
     text-transform: uppercase;
-    font-family: "trade";
-    font-size: 28px;
+    font-family: "trade",Arial,Helvetica,sans-serif;
+    font-size: 1.125em;
     justify-content: space-evenly
 }
 
 .background{
+    max-width: 100vw !important;
     position: absolute;
     top:0;
     left:0;
@@ -116,19 +237,20 @@ h3 {
     overflow: hidden;
     z-index: -1;
     height: 53vh;
-    filter: blur(20px);
-    background: url(../images/witches.jpg);
+    filter: blur(1.25em);
+    background: url(../images/23491_133392_ps_sd-high.jpg);
 
-    transform: scale(1.8) translateY(80px);
+    transform: scale(1.8) translateY(5em);
 }
 
 .film-trailer .background{
     filter: blur(0px);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1)), url(../images/33759_133098_st_sd-high.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1)), url(../images/23491_125257_st_sd-high.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    transform: scale(1);
+    height: auto;
 }
 
 .title {
@@ -137,12 +259,11 @@ h3 {
     justify-content: space-between;
 }
 
-
-
 .film-summary{
+    z-index: 4;
     flex-grow: 1;
     color: white;
-    margin: 15px;
+    margin: 0.94em;
     display: flex;
     align-items: flex-end;
 }
@@ -152,37 +273,51 @@ h3 {
 }
 
 .film-summary img{
-    margin-right: 15px;
+    margin-right: 0.94em;
+}
+
+.trailer-gradient{
+    position: absolute;
+    height: 15em;
+    left: 0;
+    right: 0;
+    max-width: 100vw !important;
+    z-index: 3;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgb(0, 0, 0));
 }
 
 .film-details, .trailer-fotos{
-    font-size: 16px;
+    font-size: 1em;
     color: #d8d8d8;
     background-color: black;
-    padding: 15px;
+    padding: 0.94em;
 }
 
 .film-details p{
-    line-height: 20px;
-    margin-bottom: 20px;
-    margin-top: 25px;
+    line-height: 1.25em;
+    margin-bottom: 1.25em;
+    margin-top: 1.625em;
+}
+
+.film-details button{
+    width: 100%;
 }
 
 .kijkwijzer{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
 }
 
 .kijkwijzer img{
-    margin-right: 5px;
+    margin-right: 0.313em;
 }
 
 .tag{
-        padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 12px;
-    margin-top: 50px;
+    padding: 0.313em;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    font-size: 0.75em;
+    margin-top: 1.9em;
     color: #151515;
 
     border-radius: 1000px;
@@ -193,17 +328,17 @@ h3 {
 
 .toggleParent {
     display: flex;
-    width: 292px;
-    height: 72px;
-    border-radius: 72px;
-    border:solid white 2px;
+    width: 18.25em;
+    height: 4.5em;
+    border-radius: 4.5em;
+    border:solid white 0.125em;
     background-color: #2D2D2E;
 }
 
 .toggleParent .button {
-    height: 64px;
-    width:142px;
-    margin: 4px;
+    height: 6em;
+    width:12.875em;
+    margin: 0.25em;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -211,16 +346,20 @@ h3 {
     justify-content:center;
     text-align: center;
     text-transform: uppercase;
-    font-family: "trade";
-    font-size: 11px;
+    font-family: "trade",Arial,Helvetica,sans-serif;
+    font-size: 0.69em;
     color: black;
     justify-content: center;
     transition:all 0.6s;
+    border-radius: 4em;
+
 }
 
 .toggleParent .button.inactive {
     color: #fff;
     filter: brightness(0.6);
+    background-color: rgba(0,0,0,0) !important;
+    background-image: none;
 }
 .toggleParent .button.inactive:hover {
     color: #fff;
@@ -228,8 +367,8 @@ h3 {
 }
 
 .toggleParent img{
-    height: 30px;
-    width: 30px;
+    height: 1.9em;
+    width: 1.9em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -238,162 +377,284 @@ h3 {
     z-index: 0;
     transition: left 0.6s;
     position: absolute;
-    height: 64px;
-    width: 142px;
-    margin: 4px;
-    left:17px;
-    border-radius: 64px;
+    height: 60.25em;
+    width: 8.875em;
+    margin: 0.25em;
+    left:1.06em;
+    border-radius: 60.25em;
     background-image: linear-gradient(to bottom, #F7DA66, #ffc426);
 }
 
 .toggle-background.active{
-    left: 158px;
+    left: 9.875em;
+}
+
+/* favoriete bios */
+
+#favoriete-bios {
+    margin-top: 2em;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    gap: 0.8em;
+}
+
+#favoriete-bios h2{
+    margin: auto;
+    margin-left: 0.2em;
+    font-size: 1em;
+}
+
+#favoriete-bios img{
+    height: 8em;
+    width: 9em;
+}
+
+#favoriete-bios article{
+    border-radius: 0.3em;
+    flex-grow: 1;
+    height: 8em;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+
 }
 
 
-.grad{
-    padding:15px;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, #171717 0%,  #353535 50%, #171717 100%);
+/* Lovation zoekbalk */
 
-    color:white;
-}
-
-.imax,.vierDX{
-}
-.imax img,.vierDX img{
-    margin-bottom: 180px
-}
 
 button, .location-button {
     display: block;
-    padding: 10px;
+    padding: 0.625em;
     border: none;
     color: rgba(21,21,21,.96);
     box-shadow: inset 0 -1px 0 rgba(0,0,0,.12);
-    border-radius: 6px;
+    border-radius: 0.38em;
     background-color: #ffc426;
     background-image: linear-gradient(to bottom,#f7da66,#ffc426);
-}
-
-button {
-    font-size: 16px;
-    padding:8px 25px 8px 25px;
-}
-
-
-button.gray{
-    filter: grayscale(100%);
 }
 
 
 .location-input{
     display: flex;
     background-color: white;
-    padding: 2px;
-    border-radius: 5px;
+    padding: 0.125em;
+    border-radius: 0.313em;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
 
 .location-input input[type=text]{
     border: none;
-    padding:5px;
-    height: 32px;
+    padding:0.313em;
+    height: 2em;
     margin: auto;
     margin-left: 0px;
     flex-grow: 1;
 }
 
 .location-input .location-button{
-    margin: 5px;
-    height: 16px;
-    width:16px;
+    margin: 0.313em;
+    height: 1em;
+    width:1em;
+}
+
+/* Nieuws */
+
+.cards h2{
+    font-weight: normal;
+    text-transform: none;
+    margin: 0px;
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    margin-bottom: 0.2em;
+}
+
+.cards img {
+    width: 80vw;
+    max-width: 18em;
+    height: auto;
+
+}
+
+/* Homepage blokken */
+
+.imax img,.vierDX img{
+    margin-bottom: 15em
 }
 
 .unlimited img{
-    width: 166px;
+    width: 10.375em;
 }
 
 .vierDX{
-    padding:20px;
+    padding:1.25em;
     color: white;
     background: url(../images/banner-4d-sm.png) no-repeat center;
     background-size: cover;
 }
 .imax{
-    padding: 20px;
+    padding: 1.25em;
     color:white;
     background: url(../images/banner_IMAX-sm.jpg) no-repeat center;
     background-size: cover;
 }
+
+/* Tijden en tickets */
+
 .tijden-tickets {
-    padding-bottom: 40px;
-    margin:15px;
+    display: flex;
+    justify-content: center;
+    margin:0.94em;
 }
 .tijden-tickets .cta {
     background: url(../images/bg-allstars-box-sm.png) no-repeat center;
     background-size: cover;
 }
 
+
+/* Call to action */
+
 .cta{
-    border-radius: 5px;
+    max-width: 32em;
+    border-radius: 0.313em;
     align-items: center;
-    padding:10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding:0.625em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
     display: flex;
-    font-size: 16px;
+    font-size: 1em;
     color: white;
-    margin-bottom: 60px;
 }
 .cta p{
-    margin-left: 15px;
+    margin-left: 0.94em;
 }
+
+/* Trailer fotos / cast en crew */
 
 .trailer-fotos .flex-row{
     overflow-x: hidden;
 }
 
 .trailer-fotos .flex-row p{
-text-align: center;
+    text-align: center;
 }
 
 .trailer-fotos img{
-    height: 160px;
-    border-radius: 5px;
-    margin-right: 20px;
+    height: 10em;
+    border-radius: 0.313em;
+    margin-right: 1.25em;
+}
+
+#splide-stills li {
+    height:auto;
+    width: 10em;
+    overflow: hidden;
 }
 
 .trailer-fotos img.video{
-    height: 220px;
+    height: 21.25em;
 }
 
-.flex-row {
-    display: flex;
+.trailer-fotos .flex-row h2, #splide-crew h2  {
+    font-weight: normal;
+    text-transform:none;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em ;
 }
 
 
-.recensie{
-    margin: 15px;
-}
-.recensie button{
-    margin-top: 80px;
-    margin-bottom: 60px;
-}
+/*footer*/
 
 footer .gele-balk{
-    padding: 40px;
+    padding: 2.5em;
     color: black;
     background-color: #ffc426;
 }
 
 footer .gele-balk li{
-    height: 32px;
-    width: 32px;
+    height: 2em;
+    width: 2em;
 }
 
 footer .gele-balk ul{
-    width: 132px;
+    width: 8.25em;
     margin: auto;
+}
+
+/* voor brede schermen*/
+
+@media only screen and (min-width: 55em) {
+
+
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container>* {
+        width: 100%;
+        max-width: 74em;
+    }
+
+    .responsiveArticles{
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(90deg, #171717 0%,  #353535 50%, #171717 100%);
+    }
+
+    .responsiveArticles .container {
+
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 74em;
+    }
+
+    .responsiveArticles .grad{
+        background: none;
+    }
+
+    .responsiveArticles .container :nth-child(1) {
+        order: 1;
+    }
+    .responsiveArticles .container :nth-child(2) {
+        order: 2;
+    }
+    .responsiveArticles .container :nth-child(3) {
+        order: 4;
+    }
+    .responsiveArticles .container :nth-child(4) {
+        order: 3;
+    }
+    .responsiveArticles article{
+        display: flex;
+        flex-direction: column;
+        max-width: 37em;
+        flex: 0 50%;
+        box-sizing:border-box;
+        border: 10px solid rgba(0,0,0,0);
+        max-height: 25em;
+    }
+    .responsiveArticles img{
+        align-self: flex-start;
+        width: auto;
+        max-height: 4em;
+        margin-bottom: 0px;
+    }
+
+
+    .film-details{
+        display: flex;
+    }
+    .film-details > div:first-of-type{
+        flex-basis: 33.3%;
+    }
+
+    .film-details button{
+        width: auto;
+    }
+
 }

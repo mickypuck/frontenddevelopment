@@ -6,21 +6,30 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. https://www.pathe.nl/film/25509/bon-bini-judeska-in-da-house?position=1
-2. https://www.pathe.nl/film/24523/monster-hunter?position=3
-3. https://www.pathe.nl/
+1. Ik heb alle content gebruikt van deze pagina; https://www.pathe.nl/
+2. Ik heb alle content gebruikt van deze pagina; https://www.pathe.nl/film/23289/wonder-woman-1984?position=2
+3. Dit font heb ik gebruikt voor de headings https://www.onlinewebfonts.com/download/0f176e527f217797a50cb82e9f62894f
+4. Voor de slider heb ik deze CSS en Javascript gebruikt https://splidejs.com/ - https://github.com/Splidejs/splide/releases/tag/v2.4.21
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Het responsive maken van mobiel naar desktop ging wel redelijk. Ook vond ik het vervangen van de afbeeldingen en teksten leuk om te doen. Omdat Pathé steeds veranderd met nieuwe films en door de tweede lockdown had ik een oude pagina gebruikt die ik niet meer terug kon vinden. Dus ik moest de afbeeldingen en teksten vervangen.
+
+Al het andere wat ik moest doen vond ik erg lastig. Ik heb er elke dag wel aan gezeten anders wist ik dat ik het niet af zou krijgen.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+Mobiel:
+<img src="images/pathe_homepage_mobiel_v3.png" width="375px" alt="versie 3 van Pathe homepage mobiel">
 
+<img src="images/pathe_film_mobiel_v3.png" width="375px" alt="versie 3 van Pathe filmoverzicht mobiel">
 
+Desktop:
+<img src="images/pathe_homepage_desktop_v3.jpg" width="375px" alt="versie 3 van Pathe homepage desktop">
+
+<img src="images/pathe_film_desktop_v3.jpg" width="375px" alt="versie 3 van Pathe filmoverzicht desktop">
 
 ## Voortgang 3 (week 6)
 
@@ -47,6 +56,20 @@ Ik heb door persoonlijke omstandigheden alleen de feedback van Sam kunnen toepas
 
 ### Verslag van meeting
 
+In de bronnenlijst kan ik voor de Pathé pagina's erbij zetten dat ik alle content van de pagina heb gebruikt.
+
+Commentaar in het einddocument mag.
+
+Webdeveloper toolbar / view document outline (chrome extensie) is handig om te gebruiken.
+
+Handig:
+HTML checker w3 schools.
+W3 schools “how to” gebruiken.
+
+Aanpassen:
+HTML klopt nog niet helemaal qua structuur.
+Die toggle button kunnen tabjes worden.
+In de css moeten de PX eruit.
 
 ## Voortgang 2 (week 5)
 
@@ -142,7 +165,7 @@ Website accessible maken voor iedereen. (Met tab overal door heen kunnen)
 
 **Je focus:** Extra aandacht voor de surface laag (surface plane)
 
-**Je opdracht:** Ik heb gekozen voor de Pathe website
+**Je opdracht:** Ik heb gekozen voor de Pathé website
 
 **Screenshot(s) van de eerste pagina (small screen):**
 

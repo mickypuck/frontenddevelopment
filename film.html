@@ -9,149 +9,278 @@
     <title>Path&eacute;</title>
 
     <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/splide-core.min.css" rel="stylesheet">
 </head>
 
 <body>
     <nav class="header">
         <ul>
             <li>
-                <img class="logo" src="./images/logo-01.png" />
+                <img class="logo" src="./images/logo-01.png" alt="Pathé logo"/>
             </li>
             <li>
-                <img src="./images/movie-black.svg" />
+                <img src="./images/movie-black.svg" alt="filmrol icoon"/>
                 Films
             </li>
             <li>
-                    <img src="./images/time-black.svg" />
+                <img src="./images/time-black.svg" alt="klok icoon"/>
                 Tijden
             </li>
             <li>
-                    <img src="./images/location-black.svg" />
+                <img src="./images/location-black.svg" alt="locatie icoon"/>
                 Bioscopen
             </li>
             <li>
-                    <img src="./images/menu-black.svg" />
+                <img src="./images/menu-black.svg" alt="hamburger menu icoon"/>
                 Menu
             </li>
         </ul>
     </nav>
-    <div class="film-trailer">
+    <div class="container film-trailer">
         <div class="film-summary">
-            <img src="./images/bonBini.jpg" class="cover-small"/>
+            <img src="./images/23491_133392_ps_sd-high.jpg" class="cover-small" alt="Wonder Woman 1984 filmposter"/>
             <article>
-                <span class="title">
+                <div class="title">
                     <h3>
-                        Bon Bini: Judeska in da House
+                        Wonder Woman 1984
                     </h3>
-                    <img src="./images/icon-heart-outline-white-sm.png" />
-                </span>
+                    <img src="./images/icon-heart-outline-white-sm.png" alt="Outline hart icoon"/>
+                </div>
                 <button class="w-100">Tijden en tickets</button>
             </article>
         </div>
+        <div class="trailer-gradient">
+        </div>
         <div class="background">
-
         </div>
+
     </div>
-    <div class="film-details">
-        <img src="./images/rating.png" /><br />
-            81 minuten
-        <div class="kijkwijzer">
-            <img src="./images/kijkwijzer-9-gray-32.png"/>
-            <img src="./images/kijkwijzer-fear-gray-32.png"/>
-            <img src="./images/kijkwijzer-explicitlanguage-gray-32.png"/>
-        </div>
-        <span class="tag">Comedy</span>
-        <span class="tag">Nederlands</span>
-        <p>
-
-
-            Release: 10-12-2020<br /><br />
-
-            Tante Judeska levert net haar nichtje Gabriëlla af op het landgoed van haar nieuwe vriend Lucas, als zijn vader - een prominente politicus en de Minister van Binnenlandse Zaken - een landelijke lockdown afkondigt.
-        </p>
-        <button class="gray w-100">Lees meer</button>
-    </div>
-    <div class="tijden-tickets">
-        <div class="cta">
-            <img src="./images/logo-all-stars-02-white.png"/><p>
-                Koop nu je tickets voor Bon Bini: Judeska in da House <strong>en ontvang Stars!</strong>
-                </p>
+    <div class="container bg-black">
+        <div class="film-details">
+            <div>
+                <img src="./images/rating.png" alt="Sterretjes rating"/>
+                <br />
+                151 minuten
+                <div class="kijkwijzer">
+                    <img src="./images/kijkwijzer-9-gray-32.png" alt="Kijkwijzer icoon nummer 9"/>
+                    <img src="./images/kijkwijzer-fear-gray-32.png" alt="Kijkwijzer icoon spin"/>
+                    <img src="./images/kijkwijzer-explicitlanguage-gray-32.png" alt="Kijkwijzer icoon schreeuw"/>
+                </div>
+                <span class="tag">Actie</span>
+                <span class="tag">Engels, Nederlands ondertiteld</span>
             </div>
-        <h2>tijden en tickets</h2>
-    <button class="w-100">kies een bioscoop</button>
+            <div>
+                <p>
+                    Release: 20-01-2021<br /><br />
+
+                    We maken een sprong naar de jaren 80 voor Wonder Woman’s volgende avontuur op het witte doek waarin ze tegenover twee geheel nieuwe vijanden staat: Max Lord en The Cheetah.
+                </p>
+                <button class="gray">Lees meer</button>
+            </div>
+        </div>
     </div>
-    <div class="trailer-fotos">
+    <div class="container">
+        <section class="tijden-tickets">
+            <article class="cta">
+                <img src="./images/logo-all-stars-02-white.png" alt="Zwarte achtergrond met vliegende gouden items"/><p>
+                    Koop nu je tickets voor Wonder Woman 1984 <strong>en ontvang Stars!</strong>
+                </p>
+            </article>
+
+    </section>
+</div>
+<div class="container trailer-fotos">
+    <section class="trailer-fotos">
 
         <h2>Trailers en foto's</h2>
         <p>
             1 video
-            </p>
+        </p>
         <div class="flex-row">
-            <img class="video" src="./images/Schermafbeelding 2020-11-23 om 11.27.50.png" />
+            <img class="video" src="./images/ww84trailerstil.jpg" alt="Screenshot trailer Wonder Woman 1984"/>
         </div>
         <p>
-            3 stills
-            </p>
-        <div class="flex-row">
+            22 stills
+        </p>
 
-            <img src="./images/BBH-POSTER_Final.jpg" />
-            <img src="./images/judeskatrailerstil-header.png" />
-            <img src="./images/33759_133094_st_sd-high.jpg" />
+        <div id="splide-stills" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./images/23491_133392_ps_sd-high.jpg" alt="Filmposter Wonder Woman 1984"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125257_st_sd-high.jpg" alt="Wonder Woman bij meerde televisies"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125259_st_sd-high.jpg" alt="Wonder Woman aan het rennen"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125261_st_sd-high.jpg" alt="Wonder Woman aan het rennen bij het Witte Huis"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125263_st_sd-high.jpg" alt="Wonder Woman die een man bij zijn enkel vast houdt"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125265_st_sd-high.jpg" alt="Wonder Woman voor allemaal gele lichtjes"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125267_st_sd-high.jpg" alt="Wonder Woman die een man bij zijn enkel vast houdt met een vinger voor haar mond"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125269_st_sd-high.jpg" alt="Wonder Woman in een tuinpak met een man in het buitenland"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125271_st_sd-high.jpg" alt="Een man in een grijze tracksuit in een Amerikaans winkelcentrum"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125273_st_sd-high.jpg" alt="Wonder Woman die 2 mannen met pistolen tegenhoud"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125275_st_sd-high.jpg" alt="Een vrouw in een lab met blauw licht"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125277_st_sd-high.jpg" alt="Een koppel wat buiten aan het dansen is"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125279_st_sd-high.jpg" alt="Een rijke vrouw in een steeg"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125281_st_sd-high.jpg" alt="Een man en een vrouw die dicht tegen elkaar aan staan"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125283_st_sd-high.jpg" alt="Een man en een vrouw op een vliegveld"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125285_st_sd-high.jpg" alt="Wonder Woman in een gouden outfit"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125287_st_sd-high.jpg" alt="Wonder Woman met een lichtgevend touw"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125289_st_sd-high.jpg" alt="Een vrouw in een museum"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125291_st_sd-high.jpg" alt="Een man en een vrouw in een vliegtuigcabine met vuurwerk buiten"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125293_st_sd-high.jpg" alt="3 mannen waarvan 1 een lichtgevend touw omzich heen heeft"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125295_st_sd-high.jpg" alt="Wonder Woman slingerend aan een liaan in een Amerikaans winkelcentrum"/>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./images/23491_125297_st_sd-high.jpg" alt="Wonder Woman vechtend met een ander vrouw met een lichtgevend touw"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-        </div>
-        <h2>Cast en crew</h2>
-        <div class="flex-row">
-            <div>
-                <img src="./images/placeholder-03.png" />
-                <p>
-                    Jonathan Herman
-                </p>
+        <section>
+            <h2>Cast en crew</h2>
+            <div id="splide-crew" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <article>
+                                <img src="./images/placeholder-03.png" alt="Geen foto beschikbaar placeholder"/>
+                                <h2>
+                                    Patty Jenkins
+                                </h2>
+                            </article>
+                        </li>
+                        <li class="splide__slide">
+                            <article>
+                                <img src="./images/gal-gadot_9677.jpg" alt="Gal Gadot"/>
+                                <h2>
+                                    Gal Gadot
+                                </h2>
+                            </article>
+                        </li>
+                        <li class="splide__slide">
+                            <article>
+                                <img src="./images/robinwrightbladerunner2049profiel120x160.jpg" alt="Robin Wright" />
+                                <h2>
+                                    Robin Wright
+                                </h2>
+                            </article>
+                        </li>
+                        <li class="splide__slide">
+                            <article>
+                                <img src="./images/connie-nielsen_6838.jpg" alt="Connie Nielsen"/>
+                                <h2>
+                                    Connie Nielsen
+                                </h2>
+                            </article>
+                        </li>
+                        <li class="splide__slide">
+                            <article>
+                                <img src="./images/chris-pine_8627.jpg" alt="Chris Pine"/>
+                                <h2>
+                                    Chris Pine
+                                </h2>
+                            </article>
+                        </li>
+                        <li class="splide__slide">
+                            <article>
+                                <img src="./images/kristenwiigdownsizingprofiel.jpg" alt="Kristen Wiig"/>
+                                <h2>
+                                    Kristen Wiig
+                                </h2>
+                            </article>
+                        </li>
+                        <li class="splide__slide">
+                            <article>
+                                <img src="./images/PedroPascalprofiel.jpg" alt="Pedro Pascal"/>
+                                <h2>
+                                    Pedro Pascal
+                                </h2>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <img src="./images/jandinoasporaat_emoji_120x160.jpg" />
-                <p>
-                    Jandino Asporaat
-                </p>
-            </div>
-            <div>
-                <img src="./images/cynthiaabmba_afbeelding.png" />
-                <p>
-                    Cynthia Abma
-                </p>
-            </div>
-        </div>
+        </section>
+    </section>
+</div>
+
+<footer>
+    <div class="zwarte-balk">
+
     </div>
-    <div class="recensie">
-        <button class="w-100">schrijf een recensie</button>
+    <div class="gele-balk">
+        <ul>
+            <li>
+                <img src="./images/twitter.png" alt="Twitter logo"/>
+            </li>
+            <li>
+                <img src="./images/facebook.png" alt="Facebook logo"/>
+            </li>
+            <li>
+                <img src="./images/instagram.png" alt="Instagram logo"/>
+            </li>
+        </ul>
     </div>
+</footer>
+<script src="./scripts/splide.min.js"></script>
+<script>
+new Splide( '#splide-crew', {
+    type: 'slide',
+    perMove: 4,
+    gap:'1em',
+    fixedWidth:'8.125em',
+    pagination: false,
+} ).mount();
 
-    <footer>
-        <div class="zwarte-balk">
 
-        </div>
-        <div class="gele-balk">
-            <ul>
-                <li>
-                    <img src="./images/twitter.png" />
-                </li>
-                <li>
-                    <img src="./images/facebook.png" />
-                </li>
-                <li>
-                    <img src="./images/instagram.png" />
-                </li>
-            </ul>
-        </div>
-    </footer>
-    <script>
-        function bestelToggle() {
-
-            toggleElements = Array.from(document.getElementsByClassName("button"));
-            toggleElements.forEach(element => element.classList.toggle("inactive"));
-            document.getElementsByClassName("toggle-background")[0].classList.toggle("active");
-        }
-
-    </script>
+new Splide( '#splide-stills', {
+    type: 'slide',
+    perMove: 4,
+    gap:'1em',
+    fixedWidth:'10em',
+    pagination: false,
+} ).mount();
+</script>
 </body>
 
 </html>
