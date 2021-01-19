@@ -10,8 +10,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 2. Ik heb alle content gebruikt van deze pagina; https://www.pathe.nl/film/23289/wonder-woman-1984?position=2
 3. Dit font heb ik gebruikt voor de headings https://www.onlinewebfonts.com/download/0f176e527f217797a50cb82e9f62894f
 4. Voor de slider heb ik deze CSS en Javascript gebruikt https://splidejs.com/ - https://github.com/Splidejs/splide/releases/tag/v2.4.21
+5. https://wdn.unl.edu/page-title-h1-best-practices
 
+## Herkansing
 
+Alle dingen die beter konden of anders moesten heb ik verbeterd. Ik heb voor de structuur van de website en het aantal divjes Sam nog gevraagd om er nog een keer naar te kijken, sinds ik er best veel problemen mee heb gehad in het gehele proces.
 
 ## Eindgesprek (week 7/8)
 

@@ -11,12 +11,30 @@
     src: url("../fonts/trade-gothic-bold-condensed-no-20-2.woff2");
 }
 
+/* https://wdn.unl.edu/page-title-h1-best-practices */
+.semanticHidden{
+    font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute!important;
+  border: 0!important;
+  padding: 0!important;
+  margin: 0!important;
+  clip: rect(1px,1px,1px,1px);
+}
+
 .hidden {
     display: none !important;
 }
 
 .bg-black {
     background-color: black
+}
+
+.bg-white {
+    background-color: white
 }
 
 .w-100{
@@ -43,30 +61,58 @@ body {
     line-height: 1.5;
 }
 
-h1,h2,h3,h4,button{
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+
+h1,h2,h3,h4,button,.button{
     text-transform: uppercase;
     font-family: "trade",Arial,Helvetica,sans-serif;
+}
+
+a.button {
+    color: black;
+    text-align: center;
+    display: inline-block;
+    line-height: 1;
 }
 
 h3 {
     font-size: 1.25em;
 }
 
-button {
+button ,.button{
     flex-grow: 0;
     font-size: 1em;
     padding:0.5em 1.625em 0.5em 1.625em;
 }
 
-button:hover{
+button:hover ,.button:hover{
     filter: brightness(0.8);
 }
 
 
-button.gray{
+button.gray ,.button.gray{
     filter: grayscale(100%);
 }
 
+.no-button {
+    color: inherit;
+    font-size: 0.81em;
+    font-family: inherit;
+    line-height: 1.5;
+    background-color: rgba(0,0,0,0);
+    text-transform: inherit;
+    background-image: none;
+    box-shadow: none;
+}
 
 
 
@@ -102,7 +148,6 @@ button.splide__arrow svg{
 }
 
 
-
 .cards {
     width: 100%;
 }
@@ -115,7 +160,11 @@ button.splide__arrow svg{
     font-family: Arial,Helvetica,sans-serif;
     overflow: hidden;
     margin-right: 1em;
+    transition: all 0.3s;
+}
 
+.cards article:hover{
+    filter: contrast(0.8) brightness(1.2);
 }
 
 /*Header/nav */
@@ -194,6 +243,7 @@ button.splide__arrow svg{
     margin-left: 0px;
 }
 
+
 .cover-small{
     width: 170px;
     height: 240px;
@@ -225,6 +275,10 @@ button.splide__arrow svg{
     font-family: "trade",Arial,Helvetica,sans-serif;
     font-size: 1.125em;
     justify-content: space-evenly
+}
+.film-covers ul li button.no-button{
+    font-size: 1.125em;
+    padding: 0px;
 }
 
 .background{
@@ -299,7 +353,7 @@ button.splide__arrow svg{
     margin-top: 1.625em;
 }
 
-.film-details button{
+.film-details button, .film-details .button{
     width: 100%;
 }
 
@@ -411,7 +465,7 @@ button.splide__arrow svg{
     width: 9em;
 }
 
-#favoriete-bios article{
+#favoriete-bios article, #favoriete-bios article a{
     border-radius: 0.3em;
     flex-grow: 1;
     height: 8em;
@@ -422,10 +476,10 @@ button.splide__arrow svg{
 }
 
 
-/* Lovation zoekbalk */
+/* Location zoekbalk */
 
 
-button, .location-button {
+button, .location-button,.button {
     display: block;
     padding: 0.625em;
     border: none;
@@ -459,6 +513,22 @@ button, .location-button {
     margin: 0.313em;
     height: 1em;
     width:1em;
+}
+
+/* Animatie voor fade-in met CSS-Keyframes */
+
+#bios-in-de-buurt , #favoriete-bios, .film-details > div:nth-of-type(2) p:nth-of-type(2) {
+    animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Nieuws */
@@ -545,7 +615,7 @@ button, .location-button {
 .trailer-fotos img{
     height: 10em;
     border-radius: 0.313em;
-    margin-right: 1.25em;
+
 }
 
 #splide-stills li {
@@ -554,8 +624,12 @@ button, .location-button {
     overflow: hidden;
 }
 
+#splide-stills img{
+    cursor: pointer;
+}
+
 .trailer-fotos img.video{
-    height: 21.25em;
+    height: 11em;
 }
 
 .trailer-fotos .flex-row h2, #splide-crew h2  {
@@ -563,6 +637,8 @@ button, .location-button {
     text-transform:none;
     font-family: Arial,Helvetica,sans-serif;
     font-size: 1em ;
+    text-align: center;
+    max-width: 92%;
 }
 
 
@@ -651,6 +727,10 @@ footer .gele-balk ul{
     }
     .film-details > div:first-of-type{
         flex-basis: 33.3%;
+    }
+
+    .film-details > div:nth-of-type(2){
+        flex-basis: 66.6%;
     }
 
     .film-details button{
