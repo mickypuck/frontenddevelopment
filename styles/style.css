@@ -6,6 +6,15 @@
     z-index: 10;
 }
 
+main > section {
+    padding-left: 0.937em !important;
+    padding-right: 0.937em !important;
+}
+
+main{
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: "trade";
     src: url("../fonts/trade-gothic-bold-condensed-no-20-2.woff2");
@@ -42,7 +51,7 @@
 }
 
 .grad{
-    padding:0.94em;
+    /*padding:0.94em;*/
     background: rgb(0,0,0);
     background: linear-gradient(90deg, #171717 0%,  #353535 50%, #171717 100%);
 
@@ -168,6 +177,9 @@ button.splide__arrow svg{
 }
 
 /*Header/nav */
+header {
+    background-color: #ffc426;
+}
 
 .header {
     max-height: 2.8em;
@@ -224,6 +236,7 @@ button.splide__arrow svg{
 }
 
 .film-covers{
+    z-index: 1;
     overflow: hidden;
     height: 80vh;
     position: relative;
@@ -550,6 +563,10 @@ button, .location-button,.button {
 }
 
 /* Homepage blokken */
+.responsiveArticles article{
+    margin-top: 2em;
+    padding:0.91em;
+}
 
 .imax img,.vierDX img{
     margin-bottom: 15em
@@ -579,9 +596,10 @@ button, .location-button,.button {
     justify-content: center;
     margin:0.94em;
 }
-.tijden-tickets .cta {
+.tijden-tickets.cta {
     background: url(../images/bg-allstars-box-sm.png) no-repeat center;
     background-size: cover;
+
 }
 
 
@@ -597,9 +615,14 @@ button, .location-button,.button {
     display: flex;
     font-size: 1em;
     color: white;
+    margin: 1em auto 1em auto;
 }
 .cta p{
     margin-left: 0.94em;
+}
+
+.container.bg-white{
+display: flex
 }
 
 /* Trailer fotos / cast en crew */
@@ -644,18 +667,18 @@ button, .location-button,.button {
 
 /*footer*/
 
-footer .gele-balk{
+footer.gele-balk{
     padding: 2.5em;
     color: black;
     background-color: #ffc426;
 }
 
-footer .gele-balk li{
+footer.gele-balk li{
     height: 2em;
     width: 2em;
 }
 
-footer .gele-balk ul{
+footer.gele-balk ul{
     width: 8.25em;
     margin: auto;
 }
@@ -667,42 +690,49 @@ footer .gele-balk ul{
 
 
     .container {
+        flex-direction: column;
+        max-width: 74em;
         display: flex;
         justify-content: center;
+        margin: auto;
+        width: calc(100%-1.875em;);
     }
+
+    .container.bg-white,.container.bg-black{
+        max-width: none;
+    }
+
+
 
     .container>* {
         width: 100%;
-        max-width: 74em;
+
+    }
+
+    .container h3{
+
     }
 
     .responsiveArticles{
-        display: flex;
-        justify-content: center;
-        background: linear-gradient(90deg, #171717 0%,  #353535 50%, #171717 100%);
+        flex-wrap: wrap;
     }
 
-    .responsiveArticles .container {
-
+    .responsiveArticles.container {
+        flex-direction: row ;
         display: flex;
-        flex-wrap: wrap;
         max-width: 74em;
     }
 
-    .responsiveArticles .grad{
-        background: none;
-    }
-
-    .responsiveArticles .container :nth-child(1) {
+    .responsiveArticles :nth-child(1) {
         order: 1;
     }
-    .responsiveArticles .container :nth-child(2) {
+    .responsiveArticles :nth-child(2) {
         order: 2;
     }
-    .responsiveArticles .container :nth-child(3) {
+    .responsiveArticles :nth-child(3) {
         order: 4;
     }
-    .responsiveArticles .container :nth-child(4) {
+    .responsiveArticles :nth-child(4) {
         order: 3;
     }
     .responsiveArticles article{
@@ -722,7 +752,13 @@ footer .gele-balk ul{
     }
 
 
+.container.film-trailer{
+    flex-direction: row;
+}
+
     .film-details{
+        margin: auto;
+        max-width: 74em;
         display: flex;
     }
     .film-details > div:first-of-type{
