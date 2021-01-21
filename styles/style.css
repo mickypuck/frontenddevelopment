@@ -11,10 +11,6 @@ main > section {
     padding-right: 0.937em !important;
 }
 
-main{
-    overflow-x: hidden;
-}
-
 @font-face {
     font-family: "trade";
     src: url("../fonts/trade-gothic-bold-condensed-no-20-2.woff2");
@@ -23,7 +19,7 @@ main{
 /* https://wdn.unl.edu/page-title-h1-best-practices */
 .semanticHidden{
     font-size: 0;
-  width: 1px;
+  width: 1px !important;
   height: 1px;
   display: inline-block;
   overflow: hidden;
